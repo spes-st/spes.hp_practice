@@ -52,18 +52,12 @@ header #header-left a {
     letter-spacing:5px;
     transition: all 0.5s;
 }
-header #header-left a:hover {
-    text-shadow: 10px 5px 3px;
-    letter-spacing: 10px;
-}
 header #header-right a {
     font-size: 1.1rem;
     letter-spacing: 1px;
     transition: all 0.5s;
 }
-header #header-right ul li a:hover {
-    text-shadow: 5px 5px 3px;
-}
+
 
 /* メイン*/
 #topImg {
@@ -105,19 +99,16 @@ header #header-right ul li a:hover {
     opacity: 0.9;
     letter-spacing:2px;
 }
-#topImg ul li:hover {
-    font-size: 1.4rem;
-    text-shadow: 5px 5px 3px;
-}
 #topImg ul li a {
     color: #000;
 }
 #main-top {
     width: 100%;
     padding-bottom: 50px;
-    /* 仮バックカラー*/
     background-color: #A2AAB0;
 }
+
+/* 商品紹介 */
 .contents {
     width: 100%;
 }
@@ -143,16 +134,8 @@ header #header-right ul li a:hover {
     transition: all 0.5s;
     color: rgb(31, 30, 30);
 }
-.prodacts:hover {
-    width: 100%;
-    z-index: 10;
-    opacity: 0.9;
-}
 .prodacts a {
     display: flex;
-}
-.prodacts:hover img {
-    box-shadow: 10px -10px #fff, -10px 10px #fff, 10px 10px #ccc, -10px -10px #ccc;
 }
 .prodacts img{
     margin-left: 50px;
@@ -237,10 +220,6 @@ footer .footer-center .icon-bar {
     overflow: hidden;
     transition: all 0.5s;
 }
-footer .footer-center .icon-bar:hover {
-    width: 100%;
-    border-radius: 50px;
-}
 footer .footer-center a {
     display: flex;
     align-items: center;
@@ -264,13 +243,38 @@ footer #footer-right ul li {
     padding-bottom: 20px;
     transition: all 0.5s;
 }
-footer #footer-right ul li:hover {
-    text-shadow: 5px 5px 3px;
+
+@media screen and (min-width: 960px) {
+    header #header-left a:hover {
+        text-shadow: 10px 5px 3px;
+        letter-spacing: 10px;
+    }
+    header #header-right ul li a:hover {
+        text-shadow: 5px 5px 3px;
+    }
+    #topImg ul li:hover {
+        font-size: 1.4rem;
+        text-shadow: 5px 5px 3px;
+    }
+    .prodacts:hover {
+        width: 100%;
+        z-index: 10;
+        opacity: 0.9;
+    }
+    .prodacts:hover img {
+        box-shadow: 10px -10px #fff, -10px 10px #fff, 10px 10px #ccc, -10px -10px #ccc;
+    }
+    footer .footer-center .icon-bar:hover {
+        width: 100%;
+        border-radius: 50px;
+    }
+    footer #footer-right ul li:hover {
+        text-shadow: 5px 5px 3px;
+    }
+    
 }
 
-
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
     /* ヘッダー */
     nav {
         width: 100%;
@@ -385,6 +389,7 @@ footer #footer-right ul li:hover {
         margin: 10px auto;
         text-decoration: underline;
     }
+    
 
 
 
