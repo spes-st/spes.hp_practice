@@ -139,7 +139,6 @@ header #header-right a {
 }
 .prodacts img{
     margin-left: 50px;
-    margin-top: 30px;
     height: 300px;
     width: 400px;
     border: 1px solid #000;
@@ -158,7 +157,7 @@ header #header-right a {
     color: #EBECED;
     text-align: center;
     font-family: 'Caveat', cursive;
-    padding-top: 30px;
+    padding: 40px 0;
     font-size: 4rem;
 }
 .prodacts .detail-right p {
@@ -243,7 +242,7 @@ footer #footer-right ul li {
     padding-bottom: 20px;
     transition: all 0.5s;
 }
-
+/* パソコン表示 */
 @media screen and (min-width: 960px) {
     header #header-left a:hover {
         text-shadow: 10px 5px 3px;
@@ -273,16 +272,19 @@ footer #footer-right ul li {
     }
     
 }
-
+/* スマホ表示 */
 @media screen and (max-width: 959px) {
     /* ヘッダー */
+    header {
+        height: 80px;
+    }
     nav {
         width: 100%;
         height: 100%;
         position: fixed;
         background-color: #fff;
         top: 0;
-        left: -300;
+        left: -500px;
         bottom: 0;
         transition: all 0.5s;
         z-index: 3;
@@ -375,6 +377,9 @@ footer #footer-right ul li {
     }
 
     /* メイン */
+    #topImg {
+        padding-top: 80px;
+    }
     #topImg h1 {
         width: 100%;
         text-align: center;
@@ -389,8 +394,36 @@ footer #footer-right ul li {
         margin: 10px auto;
         text-decoration: underline;
     }
-    
+    .contents h1 {
+        font-size: 2rem;
+    }
+    .prodacts {
+        width: 100%;
+        display: block;
 
+    }
+    .prodacts h2 {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+    .prodacts img { 
+        width: 80%;
+        height: 250px;
+    }
+    .prodacts a {
+        display: block;
+    }
+    .prodacts .detail-right {
+        padding: 0;
+        width: 100%;
+    }
+    .prodacts .detail-right p {
+        padding: 20px 10px 10px 10px;
+        font-size: 1rem;
+    }
+    .prodacts .detail-right span {
+        font-size: 1rem;
+    }
 
 
 
