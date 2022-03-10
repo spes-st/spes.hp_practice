@@ -177,6 +177,7 @@ header #header-right a {
 /* フッター */
 footer {
     width: 100%;
+    height: 300px;
     display: flex;
     margin-top: 10px;
     justify-content:space-between;
@@ -185,8 +186,6 @@ footer {
     background-color: #4C586F;
 }
 footer #footer-left {
-    height: 300px;
-    /* width: 200px; */
     background-color: #4c586f65;
 }
 footer #footer-left img{
@@ -203,11 +202,11 @@ footer #footer-left p {
 }
 
 
-footer .footer-center {
+footer #footer-center {
     margin-top: 50px;
     width: 250px;
 }
-footer .footer-center .icon-bar {
+footer #footer-center .icon-bar {
     margin: 10px;
     width: 60px;
     height: 60px;
@@ -219,19 +218,15 @@ footer .footer-center .icon-bar {
     overflow: hidden;
     transition: all 0.5s;
 }
-footer .footer-center a {
+footer #footer-center a {
     display: flex;
     align-items: center;
 }
-footer .footer-center .icon {
+footer #footer-center .icon {
     padding: 0 20px;
 }
-footer .footer-center p {
+footer #footer-center p {
     margin: 0 auto;
-}
-
-footer #footer-right {
-    height: 300px;
 }
 footer #footer-right ul {
     margin-top: 90px;
@@ -263,7 +258,7 @@ footer #footer-right ul li {
     .prodacts:hover img {
         box-shadow: 10px -10px #fff, -10px 10px #fff, 10px 10px #ccc, -10px -10px #ccc;
     }
-    footer .footer-center .icon-bar:hover {
+    footer #footer-center .icon-bar:hover {
         width: 100%;
         border-radius: 50px;
     }
@@ -378,7 +373,7 @@ footer #footer-right ul li {
 
     /* メイン */
     #topImg {
-        padding-top: 80px;
+        padding-top: 0;
     }
     #topImg h1 {
         width: 100%;
@@ -420,14 +415,34 @@ footer #footer-right ul li {
     .prodacts .detail-right p {
         padding: 20px 10px 10px 10px;
         font-size: 1rem;
+        line-height: 1.5;
     }
     .prodacts .detail-right span {
         font-size: 1rem;
     }
 
-
-
-
-
-
+    /* フッター */
+    footer {
+        display: block;
+        height: 200px;
+        padding: 0 20px;
+    }
+    footer #footer-left {
+        display: none;
+    }
+    footer #footer-right {
+        display: none;
 }
+    footer #footer-center {
+        width: 100%;
+        margin-top: 0;
+        padding-top: 50px;
+        align-items: center;
+    }
+    footer #footer-center .icon-bar {
+        margin: 10px 20px 10px 20px;
+    }
+    footer #footer-center ul {
+        display: flex;
+        justify-content: center;
+    }
