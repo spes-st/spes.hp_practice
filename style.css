@@ -385,6 +385,7 @@ footer #footer-right ul li {
         width: 100%;
         text-align: center;
         font-size:2.5rem;
+        top: 40%
     }
     #topImg ul {
         flex-wrap: wrap;
@@ -393,7 +394,7 @@ footer #footer-right ul li {
     #topImg ul li {
         width: 50%;
         margin: 10px auto;
-        text-decoration: underline;
+        text-decoration: underline; 
     }
     .contents h1 {
         font-size: 2rem;
