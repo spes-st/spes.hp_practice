@@ -372,6 +372,12 @@ footer #footer-right ul li {
     }
 
     /* メイン */
+    #main-top {
+        padding-bottom: 10px;
+    }
+    .contents {
+        padding: 0 10px;
+    }
     #topImg {
         padding-top: 0;
     }
@@ -395,6 +401,7 @@ footer #footer-right ul li {
     .prodacts {
         width: 100%;
         display: block;
+        border-radius: 30px;
 
     }
     .prodacts h2 {
