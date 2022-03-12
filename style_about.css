@@ -1,7 +1,9 @@
+/* 全体に適用 */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Ryumin Regular KL,"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝体", "Yu Mincho",serif;
 }
 body {
     background-color: #CBC5C1;
@@ -19,11 +21,8 @@ li {
     max-width: 960px;
     margin: 0 auto;
 }
-p {
-    font-family: fantasy;
-}
 
-/* ヘッダー*/
+/* ヘッダー */
 header {
     width: 100%;
     height: 100px;
@@ -58,120 +57,65 @@ header #header-right a {
     transition: all 0.5s;
 }
 
-
-/* メイン*/
-#topImg {
+/* メイン */
+#about {
     position: relative;
     width: 100%;
     padding-top: 100px;
 }
-#topImg img {
-    height: 500px;
-    width: 100%;
-    opacity: 0.8;
-}
-#topImg h1 {
-    position: absolute;
-    color: #000;
+#about h1 {
+    margin: 50px;
     font-size: 4rem;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    opacity: 0.7;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}#topImg ul {
-    position: absolute;
-    top: 80%;
-    width: 100%;
-    justify-content: center;
-    padding: 30px 0;
-    align-items: center;
-    display: flex;
-    background-color: #ddd;
-    opacity: 0.8;
-}
-#topImg ul li {
-    padding: 0 30px;
-    font-size: 1.4rem;  
-    transition: all 0.5s;
-    opacity: 0.9;
-    letter-spacing:2px;
-}
-#topImg ul li a {
-    color: #000;
-}
-#main-top {
-    width: 100%;
-    padding-bottom: 50px;
-    background-color: #A2AAB0;
-}
-
-/* 商品紹介 */
-.contents {
-    width: 100%;
-}
-.contents h1 {
-    color: #fff;
-    font-size: 4rem;
-    font-family: 'Cherry Swash', cursive;
-    padding-bottom: 30px;
     text-align: center;
-    padding-top: 30px;
-    letter-spacing: 5px;
     border-bottom: 2px solid #000;
 }
-.prodacts {
+#about #about-contents {
     display: flex;
-    height: 550px;
-    width: 500px;
-    margin: 50px auto;
-    background-color: #4c586f65;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(56, 55, 55);
-    overflow: hidden;
-    transition: all 0.5s;
-    color: rgb(31, 30, 30);
+    width: 80%;
+    justify-content:center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    border-radius:10px;
+    background-color: #EBECED; 
 }
-.prodacts a {
+#about #about-contents .content {
+    width: 50%;
+}
+#about #about-contents .content dl {
     display: flex;
+    margin: 50px;
 }
-.prodacts img{
-    margin-left: 50px;
-    height: 300px;
-    width: 400px;
-    border: 1px solid #000;
-    outline: 2px solid #000;
-    outline-offset: 3px;
-    transition: all 0.5s;
-}
-.prodacts .detail-right {
-    padding: 0 30px;
-    width: 500px;
-    margin: auto;
+#about #about-contents .content dl dt {
+    width: 40%;
+    height: 100%;
     text-align: center;
-    text-shadow: 3px 3px 3px #000;
-}
-.prodacts h2 {
-    color: #EBECED;
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    padding: 40px 0;
-    font-size: 4rem;
-}
-.prodacts .detail-right p {
-    color: #EBECED; 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    line-height: 2;
-    align-items: center;
-    font-size: 1.3rem;
-    text-shadow: 2px 1px 2px rgb(40, 40, 40);
-}
-.prodacts .detail-right span {
+    padding: 20px 50px;
     color: #fff;
-    font-family: fantasy;
+    background-color: #000;
+}
+#about #about-contents .content dl dd {
+    width: 60%;
+    padding: 20px;
+    border-top: 1px solid #000;
+}
+#about #about-contents .content dl dd p:nth-child(1) {
+    padding-bottom: 20px;
+}
+#btnArea {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#btnArea a {
+    padding: 20px 40px;
+    background-color: #000;
+    border-radius:10px;
+}
+#btnArea a:hover {
+    opacity: 0.5;
 }
 
 /* フッター */
@@ -234,6 +178,8 @@ footer #footer-right ul li {
     padding-bottom: 20px;
     transition: all 0.5s;
 }
+
+
 /* パソコン表示 */
 @media screen and (min-width: 960px) {
     header #header-left a:hover {
@@ -265,13 +211,14 @@ footer #footer-right ul li {
     footer #footer-right ul li:hover {
         text-shadow: 5px 5px 3px;
     }
-    
 }
+
 /* スマホ表示 */
 @media screen and (max-width: 959px) {
+
     /* ヘッダー */
     header {
-        height: 80px;
+    height: 80px;
     }
     nav {
         width: 100%;
@@ -370,62 +317,31 @@ footer #footer-right ul li {
         opacity: 0.8;
         cursor: pointer;
     }
-    /* メイン */
-    #main-top {
-        padding-bottom: 10px;
-    }
-    .contents {
-        padding: 0 10px;
-    }
-    #topImg {
-        padding-top: 0;
-    }
-    #topImg h1 {
-        width: 100%;
-        text-align: center;
-        font-size:2.5rem;
-        top: 40%
-    }
-    #topImg ul {
-        flex-wrap: wrap;
-        top:65%;
-    }
-    #topImg ul li {
-        width: 50%;
-        margin: 10px auto;
-        text-decoration: underline; 
-    }
-    .contents h1 {
-        font-size: 2rem;
-    }
-    .prodacts {
-        width: 100%;
-        display: block;
-        border-radius: 30px;
 
-    }
-    .prodacts h2 {
+    /* メイン */
+    #about-title h1 {
         font-size: 2rem;
-        padding: 20px 0;
     }
-    .prodacts img { 
-        width: 80%;
-        height: 250px;
-        margin-left: 40px;
-    }
-    .prodacts a {
+    #about #about-contents {
+        width: 90%;
         display: block;
     }
-    .prodacts .detail-right {
-        padding: 0;
+    #about #about-contents .content {
         width: 100%;
     }
-    .prodacts .detail-right p {
-        padding: 20px 10px 10px 10px;
-        font-size: 1rem;
-        line-height: 1.5;
+    #about #about-contents .content dl {
+        display: block;
+        margin: 40px 20px;
     }
-    .prodacts .detail-right span {
+    #about #about-contents .content dl dt {
+        font-size: 1rem;
+        width: 160px;
+        padding: 7px 10px;
+    }
+    #about #about-contents .content dl dd {
+        width: 100%;
+    }
+    #btnArea a {
         font-size: 1rem;
     }
 
