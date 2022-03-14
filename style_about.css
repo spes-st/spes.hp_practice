@@ -189,18 +189,6 @@ footer #footer-right ul li {
     header #header-right ul li a:hover {
         text-shadow: 5px 5px 3px;
     }
-    #topImg ul li:hover {
-        font-size: 1.4rem;
-        text-shadow: 5px 5px 3px;
-    }
-    .prodacts:hover {
-        width: 100%;
-        z-index: 10;
-        opacity: 0.9;
-    }
-    .prodacts:hover img {
-        box-shadow: 10px -10px #fff, -10px 10px #fff, 10px 10px #ccc, -10px -10px #ccc;
-    }
     footer #footer-left:hover {
         opacity: 0.5;
     }
@@ -218,7 +206,7 @@ footer #footer-right ul li {
 
     /* ヘッダー */
     header {
-    height: 80px;
+        height: 80px;
     }
     nav {
         width: 100%;
@@ -355,7 +343,7 @@ footer #footer-right ul li {
     }
     footer #footer-right {
         display: none;
-}
+    }
     footer #footer-center {
         width: 100%;
         margin-top: 0;

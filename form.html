@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style_about.css" />
+		<link rel="stylesheet" href="style_form.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -12,7 +12,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<title>会社概要</title>
+		<title>お問い合わせフォーム</title>
 	</head>
 	<body>
 		<!-- ヘッダー -->
@@ -25,7 +25,7 @@
 					<div class="inner">
 						<ul>
 							<li><a href="index.html">HOME</a></li>
-							<li><a href="#prodacts">PRODACTS</a></li>
+							<li><a href="index.html">PRODACTS</a></li>
 							<li><a href="about.html">ABOUT</a></li>
 							<li><a href="form.html">CONTACT</a></li>
 						</ul>
@@ -43,65 +43,67 @@
 
 		<!-- メイン -->
 		<main>
-			<div id="about">
-				<div id="about-title">
-					<h1>会社概要</h1>
+			<div id="form-title">
+					<h1>お問い合わせ</h1>
 				</div>
-				<div id="about-contents">
-					<div class="content">
-						<dl>
-							<dt>屋号名</dt>
-							<dd>株式会社Spes.</dd>
-						</dl>
-					</div>
-					<div class="content">
-						<dl>
-							<dt>資本金</dt>
-							<dd>100万</dd>
-						</dl>
-					</div>
-					<div class="content">
-						<dl>
-							<dt>設立</dt>
-							<dd>2022年1月</dd>
-						</dl>
-					</div>
-					<div class="content">
-						<dl>
-							<dt>従業員数</dt>
-							<dd>2名</dd>
-						</dl>
-					</div>
-					<div class="content">
-						<dl>
-							<dt>代表者</dt>
-							<dd>
-								<p>
-									代表取締役社長<br />
-									　SHIGETOKI　HIROTA<br />
-								</p>
-								<p>
-									代表取締役代表<br />
-									　SHOMA　TADA
-								</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="content">
-						<dl>
-							<dt>本所在地</dt>
-							<dd>
-								〒999-9999<br />
-								愛知県名古屋市中区栄1丁目1番地<br />
-								TEL : 090-9999-9999<br />
-								FAX : 052-999-9999
-							</dd>
-						</dl>
-					</div>
+				<div class="contact-form">
+					<p class="title">お問い合わせフォーム</p>
+					<form action="https://api.staticforms.xyz/submit" method="post">
+						<input
+							type="hidden"
+							name="accessKey"
+							value="eae562e1-79a7-4147-ae89-f2a865cae452"
+						/>
+						<!-- Required -->
+						<div class="item">
+							<label for="label" class="label">お名前</label>
+							<input
+								type="text"
+								class="inputs"
+								name="name"
+								placeholder="例：田中　太郎"
+							/>
+						</div>
+						<div class="item">
+							<label for="label" class="label">メールアドレス</label>
+							<input
+								type="email"
+								class="inputs"
+								name="email"
+								required
+								placeholder="※間違えの無いように記入して下さい"
+							/>
+						</div>
+						<div class="item">
+							<p class="label">関連</p>
+							<div class="inputs">
+								<input type="radio" name="menu" id="s" value="s" /><label
+									for="s"
+									>会社について</label
+								><br>
+								<input type="radio" name="menu" id="a" value="s" /><label
+									for="a"
+									>商品について</label
+								><br>
+								<input type="radio" name="menu" id="b" value="s" /><label
+									for="b"
+									>その他要望等</label
+								>
+							</div>
+						</div>
+						<div class="item">
+							<label for="label" class="label">内容</label>
+							<textarea
+								class="inputs"
+								placeholder="お問い合わせ内容"
+							></textarea>
+						</div>
+						<div class="btnArea">
+							<input type="submit" value="予約決定" />
+							<input type="reset" value="リセット" />
+						</div>
+					</form>
 				</div>
-			</div>
-			<div id="btnArea">
-				<a href="index.html">商品一覧へ</a>
 			</div>
 		</main>
 
