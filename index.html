@@ -1,178 +1,152 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社Spes.HP</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <header>
-        <div id="header-left">
-            <p><a href="index.html">株式会社Spes.</a></p>
-        </div>
-        <div id="header-right">
-            <nav>
-                <div class="inner">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#prodacts">PRODACTS</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="form.html">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- トグルボタン -->
-            <div class="toggle-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div id="mask"></div>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>商品一覧</title>
+	</head>
+	<body>
+		<!-- ヘッダー -->
+		<header>
+			<div id="header-left">
+				<p><a href="index.html">株式会社Spes.</a></p>
+			</div>
+			<div id="header-right">
+				<nav>
+					<div class="inner">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="prodact.html">PRODACTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="form.html">CONTACT</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- トグルボタン -->
+				<div class="toggle-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div id="mask"></div>
+			</div>
+		</header>
 
-    </header>
-    <main>
-        <div id="topImg">
-            <img src="img/topImg.jpg">
-            <h1>Memorial Box</h1>
-                    <ul>
-                        <li><a href="#standard">Standard</a></li>
-                        <li><a href="#exective">Exective</a></li>
-                        <li><a href="#specialsweet">SpecialSweet</a></li>
-                        <li><a href="#ordermade">OrderMade</a></li>
-                    </ul>
-        </div>
-        <div class="container" id="main-top">
-            <div class="contents">
-                <h1>Prodact</h1>
-                <div class="prodacts" id="standard">
-                    <a href="prodactpage1.html">
-                        <div class="detail-left">
-                        <h2>Standard</h2>
-                        <img src="img/Gift box.jpg">
-                        </div>
-                        <div class="detail-right">
-                        <p>
-                            学生さんにご好評なお手軽価格<br>
-                            Lorem, ipsum dolor sit amet consectetur. <br>
-                            Delectus cupiditate accusamus architecto cum natus
-                            reiciendis accusantium. Veniam sapiente maxime ipsum<br>
-                        </p>
-                        <span>Price　￥2,980-</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="prodacts" id="exective">
-                    <a href="prodactpage1.html">
-                        <div class="detail-left">
-                        <h2>Exective</h2>
-                        <img src="img/Gift box.jpg">
-                        </div>
-                        <div class="detail-right">
-                        <p>
-                            学生さんにご好評なお手軽価格<br>
-                            Lorem, ipsum dolor sit amet consectetur. <br>
-                            Delectus cupiditate accusamus architecto cum natus
-                            reiciendis accusantium. Veniam sapiente maxime ipsum<br>
-                        </p>
-                        <span>Price　￥4,980-</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="prodacts" id="specialsweet">
-                    <a href="prodactpage1.html">
-                        <div class="detail-left">
-                        <h2>SpecialSweet</h2>
-                        <img src="img/Gift box.jpg">
-                        </div>
-                        <div class="detail-right">
-                        <p>
-                            学生さんにご好評なお手軽価格<br>
-                            Lorem, ipsum dolor sit amet consectetur. <br>
-                            Delectus cupiditate accusamus architecto cum natus
-                            reiciendis accusantium. Veniam sapiente maxime ipsum<br>
-                        </p>
-                        <span>Price　￥7,980-</span>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="prodacts" id="ordermade">
-                        <a href="prodactpage1.html">
-                            <div class="detail-left">
-                            <h2>OrderMade</h2>
-                            <img src="img/Gift box.jpg">
-                            </div>
-                            <div class="detail-right">
-                            <p>
-                                学生さんにご好評なお手軽価格<br>
-                                Lorem, ipsum dolor sit amet consectetur. <br>
-                                Delectus cupiditate accusamus architecto cum natus
-                                reiciendis accusantium. Veniam sapiente maxime ipsum<br>
-                            </p>
-                            <span>Price　￥12,980-</span>
-                            </div>
-                        </a>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-left">
-            <a href="index.html">
-                <img src="img/Spes..png">
-                <p>株式会社Spes.</p>
-            </a>
-        </div>
-        <div id="footer-center">
-            <ul>
-                <li>
-                    <div class="icon-bar">
-                        <a href="https://www.instagram.com/spes.2022" target="blank">
-                            <i class="fab fa-instagram icon"></i>
-                            <p>@spes.2022</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-bar">
-                        <a href="https://lin.ee/KaTKbAy" target="blank">
-                            <i class="fa-brands fa-line icon"></i>
-                            <p>LINE</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="icon-bar">
-                        <a href="#" target="blank">
-                            <i class="fab fa-twitter icon"></i>
-                            <p>Twitter</p>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="footer-right">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">会社概要</a></li>
-                <li><a href="form.html">お問い合わせ</a></li>
-            </ul>
-        </div>
-    </footer>
+		<!-- メイン -->
+		<main>
+			<div class="top">
+				<div class="title">
+					<h1>株式会社Spes.</h1>
+					<h2>～人々の幸せに付加価値を～</h2>
+				</div>
+				<div class="contents">
+					<div class="container">
+						<h2>我が社の願い</h2>
+						<p>
+							この度は弊社のサイトを閲覧して頂きありがとうございます。<br />
+							現在、日本では経済の発展が著しく衰え、世界の日本と言われていた以前の日本の面影すら無くなりつつあるのが現状です。<br />
+							そして、そんな経済の悪化に伴い、日本全体の人々の幸せも少なくなっているように感じます。<br />
+							そこで私達は、もっと人々の幸せに少しでも携われないかと考え、”人々の幸せに付加価値を”この社是を掲げました。<br />
+							この先、弊社の商品を通して人々の幸せをサポートさせて頂き、日本全体をより明るく出来ればと思います。
+						</p>
+					</div>
+					<h2>商品紹介</h2>
+					<div class="prodacts">
+						<div class="prodact">
+								<a href="prodact.html">
+										<h3>MemorialBox</h3>
+										<img src="img/Gift box.jpg">
+										<div class="comment">
+											<p>
+												旅行をサプライズしたい。<br>
+												旅行をコレクションとして思い出に残しておきたい。そんな方に<br>
+												おすすめの商品。
+											</p>
+										</div>
+								</a>
+						</div>
+						<div class="prodact">
+							<a href="prodact.html">
+									<h3>Coming Soon</h3>
+									<img src="img/Gift box.jpg">
+									<div class="comment">
+										<p>
+											Coming Soon
+										</p>
+									</div>
+							</a>
+					</div>
+					<div class="prodact">
+						<a href="prodact.html">
+								<h3>Coming Soon</h3>
+								<img src="img/Gift box.jpg">
+								<div class="comment">
+									<p>
+										Coming Soon<br>
+									</p>
+								</div>
+						</a>
+				</div>
+					</div>
 
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- フッター -->
+		<footer>
+			<div id="footer-left">
+				<a href="index.html">
+					<img src="img/Spes..png" />
+					<p>株式会社Spes.</p>
+				</a>
+			</div>
+			<div id="footer-center">
+				<ul>
+					<li>
+						<div class="icon-bar">
+							<a href="https://www.instagram.com/spes.2022" target="blank">
+								<i class="fab fa-instagram icon"></i>
+								<p>@spes.2022</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="icon-bar">
+							<a href="https://lin.ee/KaTKbAy" target="blank">
+								<i class="fa-brands fa-line icon"></i>
+								<p>LINE</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="icon-bar">
+							<a href="#" target="blank">
+								<i class="fab fa-twitter icon"></i>
+								<p>Twitter</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-right">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">会社概要</a></li>
+					<li><a href="form.html">お問い合わせ</a></li>
+				</ul>
+			</div>
+		</footer>
 
-
-
-
-
-
-<script src="script.js"></script>
-</body>
+		<script src="script.js"></script>
+	</body>
 </html>

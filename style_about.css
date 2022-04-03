@@ -1,359 +1,357 @@
 /* 全体に適用 */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Ryumin Regular KL,"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝体", "Yu Mincho",serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Ryumin Regular KL, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",
+		"游明朝体", "Yu Mincho", serif;
 }
 body {
-    background-color: #CBC5C1;
+	background-color: #cbc5c1;
 }
-a { 
-    text-decoration: none;
-    color: #fff;
-    font-family: fantasy;
-    font-size: 1.5rem;
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: fantasy;
+	font-size: 1.5rem;
 }
 li {
-    list-style: none;
+	list-style: none;
 }
 .container {
-    max-width: 960px;
-    margin: 0 auto;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 /* ヘッダー */
 header {
-    width: 100%;
-    height: 100px;
-    background-color: #3E3E3B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 10px 10px 30px rgba(0,0,0,1);
-    position: fixed;
-    z-index: 1000;
+	width: 100%;
+	height: 100px;
+	background-color: #3e3e3b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 1);
+	position: fixed;
+	z-index: 1000;
 }
 header #header-left {
-    padding-left:  10%;
+	padding-left: 10%;
 }
 header #header-right {
-    padding-right: 10%;
+	padding-right: 10%;
 }
 header #header-right ul {
-    display: flex;
+	display: flex;
 }
 header #header-right ul li {
-    margin: 0 20px;
+	margin: 0 20px;
 }
 header #header-left a {
-    font-size: 1.6rem;
-    letter-spacing:5px;
-    transition: all 0.5s;
+	font-size: 1.6rem;
+	letter-spacing: 5px;
+	transition: all 0.5s;
 }
 header #header-right a {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    transition: all 0.5s;
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	transition: all 0.5s;
 }
 
 /* メイン */
 #about {
-    position: relative;
-    width: 100%;
-    padding-top: 100px;
+	position: relative;
+	width: 100%;
+	padding-top: 100px;
 }
 #about h1 {
-    margin: 50px;
-    font-size: 4rem;
-    text-align: center;
-    border-bottom: 2px solid #000;
+	margin: 50px;
+	font-size: 4rem;
+	text-align: center;
+	border-bottom: 2px solid #000;
 }
 #about #about-contents {
-    display: flex;
-    width: 80%;
-    justify-content:center;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    font-size: 1.2rem;
-    border: 2px solid #000;
-    border-radius:10px;
-    background-color: #EBECED; 
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	font-size: 1.2rem;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color: #ebeced;
 }
 #about #about-contents .content {
-    width: 50%;
+	width: 50%;
 }
 #about #about-contents .content dl {
-    display: flex;
-    margin: 50px;
+	display: flex;
+	margin: 50px;
 }
 #about #about-contents .content dl dt {
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    padding: 20px 50px;
-    color: #fff;
-    background-color: #000;
+	width: 40%;
+	height: 100%;
+	text-align: center;
+	padding: 20px 50px;
+	color: #fff;
+	background-color: #000;
 }
 #about #about-contents .content dl dd {
-    width: 60%;
-    padding: 20px;
-    border-top: 1px solid #000;
+	width: 60%;
+	padding: 20px;
+	border-top: 1px solid #000;
 }
 #about #about-contents .content dl dd p:nth-child(1) {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 #btnArea {
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 #btnArea a {
-    padding: 20px 40px;
-    background-color: #000;
-    border-radius:10px;
+	padding: 20px 40px;
+	background-color: #000;
+	border-radius: 10px;
 }
 #btnArea a:hover {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 
 /* フッター */
 footer {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    margin-top: 10px;
-    justify-content:space-between;
-    padding: 0 100px;
-    color: #EBECED;
-    background-color: #4C586F;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+	padding: 0 100px;
+	color: #ebeced;
+	background-color: #4c586f;
 }
-footer #footer-left img{
-    height: 130px;
-    text-align: center;
-    margin-top: 70px;
-    border-radius: 50%;
+footer #footer-left img {
+	height: 130px;
+	text-align: center;
+	margin-top: 70px;
+	border-radius: 50%;
 }
 footer #footer-left p {
-    text-align: center;
-    letter-spacing: 2px;
-    padding-top: 10px;
-    font-size: 1.2rem;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-top: 10px;
+	font-size: 1.2rem;
 }
-
 
 footer #footer-center {
-    margin-top: 50px;
-    width: 250px;
+	margin-top: 50px;
+	width: 250px;
 }
 footer #footer-center .icon-bar {
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #bfbfbf;
-    font-size: 1.6rem;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    transition: all 0.5s;
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	color: #bfbfbf;
+	font-size: 1.6rem;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	transition: all 0.5s;
 }
 footer #footer-center a {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 footer #footer-center .icon {
-    padding: 0 20px;
+	padding: 0 20px;
 }
 footer #footer-center p {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 footer #footer-right ul {
-    margin-top: 90px;
-    align-items: center;
+	margin-top: 90px;
+	align-items: center;
 }
 footer #footer-right ul li {
-    list-style:circle;
-    padding-bottom: 20px;
-    transition: all 0.5s;
+	list-style: circle;
+	padding-bottom: 20px;
+	transition: all 0.5s;
 }
-
 
 /* パソコン表示 */
 @media screen and (min-width: 960px) {
-    header #header-left a:hover {
-        text-shadow: 10px 5px 3px;
-        letter-spacing: 10px;
-    }
-    header #header-right ul li a:hover {
-        text-shadow: 5px 5px 3px;
-    }
-    footer #footer-left:hover {
-        opacity: 0.5;
-    }
-    footer #footer-center .icon-bar:hover {
-        width: 100%;
-        border-radius: 50px;
-    }
-    footer #footer-right ul li:hover {
-        text-shadow: 5px 5px 3px;
-    }
+	header #header-left a:hover {
+		text-shadow: 10px 5px 3px;
+		letter-spacing: 10px;
+	}
+	header #header-right ul li a:hover {
+		text-shadow: 5px 5px 3px;
+	}
+	footer #footer-left:hover {
+		opacity: 0.5;
+	}
+	footer #footer-center .icon-bar:hover {
+		width: 100%;
+		border-radius: 50px;
+	}
+	footer #footer-right ul li:hover {
+		text-shadow: 5px 5px 3px;
+	}
 }
 
 /* スマホ表示 */
 @media screen and (max-width: 959px) {
+	/* ヘッダー */
+	header {
+		height: 80px;
+	}
+	nav {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: #fff;
+		top: 0;
+		left: -500px;
+		bottom: 0;
+		transition: all 0.5s;
+		z-index: 3;
+		opacity: 0;
+	}
+	.open nav {
+		left: 0;
+		opacity: 0.5;
+	}
+	nav.inner {
+		width: 100%;
+		height: 100%;
+	}
+	header #header-right .inner ul {
+		width: 100%;
+		height: 100%;
+		display: block;
+		padding-top: 50px;
+	}
+	header #header-right .inner ul li {
+		display: block;
+		padding: 50px 0;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 1px solid #333;
+	}
+	header #header-right a {
+		display: block;
+		color: #333;
+		font-size: 1.5rem;
+		width: 100%;
+		height: 100%;
+	}
+	header #header-right .toggle-btn {
+		display: block;
+		position: fixed;
+		top: 30px;
+		right: 30px;
+		width: 30px;
+		height: 30px;
+		z-index: 3;
+		cursor: pointer;
+	}
+	header #header-right .toggle-btn span {
+		position: absolute;
+		display: block;
+		left: 0;
+		width: 30px;
+		height: 2px;
+		background-color: #fff;
+		transition: all 0.5s;
+		border-radius: 4px;
+	}
+	header #header-right .toggle-btn span:nth-child(1) {
+		top: 4px;
+	}
+	header #header-right .toggle-btn span:nth-child(2) {
+		top: 14px;
+	}
+	header #header-right .toggle-btn span:nth-child(3) {
+		bottom: 4px;
+	}
+	.open .toggle-btn span {
+		background-color: #fff;
+	}
+	.open .toggle-btn span:nth-child(1) {
+		transform: translateY(10px) rotate(-315deg);
+	}
+	.open .toggle-btn span:nth-child(2) {
+		opacity: 0;
+	}
+	.open .toggle-btn span:nth-child(3) {
+		transform: translateY(-10px) rotate(315deg);
+	}
+	#mask {
+		display: none;
+		transition: all 0.5s;
+	}
+	.open #mask {
+		display: block;
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: fixed;
+		opacity: 0.8;
+		cursor: pointer;
+	}
 
-    /* ヘッダー */
-    header {
-        height: 80px;
-    }
-    nav {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        background-color: #fff;
-        top: 0;
-        left: -500px;
-        bottom: 0;
-        transition: all 0.5s;
-        z-index: 3;
-        opacity: 0;
-    }
-    .open nav {
-        left: 0;
-        opacity: 0.5;
-    }
-    nav.inner {
-        width: 100%;
-        height: 100%;
-    }
-    header #header-right .inner ul {
-        width: 100%;
-        height: 100%;
-        display: block;
-        padding-top: 50px;
-    }
-    header #header-right .inner ul li {
-        display: block;
-        padding: 50px 0;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border-bottom: 1px solid #333;
-    }
-    header #header-right a {
-        display: block;
-        color: #333;
-        font-size: 1.5rem;
-        width: 100%;
-        height: 100%;
-    }
-    header #header-right .toggle-btn {
-        display: block;
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        width: 30px;
-        height: 30px;
-        z-index: 3;
-        cursor: pointer;
-    }
-    header #header-right .toggle-btn span {
-        position: absolute;
-        display: block;
-        left: 0;
-        width: 30px;
-        height: 2px;
-        background-color: #fff;
-        transition: all 0.5s;
-        border-radius: 4px;
-    }
-    header #header-right .toggle-btn span:nth-child(1) {
-        top: 4px;
-    }
-    header #header-right .toggle-btn span:nth-child(2) {
-        top: 14px
-    }
-    header #header-right .toggle-btn span:nth-child(3) {
-        bottom: 4px;
-    }
-    .open .toggle-btn span {
-        background-color: #fff;
-    }
-    .open .toggle-btn span:nth-child(1) {
-        transform: translateY(10px) rotate(-315deg);
-    }
-    .open .toggle-btn span:nth-child(2) {
-        opacity: 0;
-    }
-    .open .toggle-btn span:nth-child(3) {
-        transform: translateY(-10px) rotate(315deg);
-    }
-    #mask {
-        display: none;
-        transition: all 0.5s;
-    }
-    .open #mask {
-        display: block;
-        background-color: #000;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        opacity: 0.8;
-        cursor: pointer;
-    }
+	/* メイン */
+	#about-title h1 {
+		font-size: 2rem;
+	}
+	#about #about-contents {
+		width: 90%;
+		display: block;
+	}
+	#about #about-contents .content {
+		width: 100%;
+	}
+	#about #about-contents .content dl {
+		display: block;
+		margin: 40px 20px;
+	}
+	#about #about-contents .content dl dt {
+		font-size: 1rem;
+		width: 160px;
+		padding: 7px 10px;
+	}
+	#about #about-contents .content dl dd {
+		width: 100%;
+	}
+	#btnArea a {
+		font-size: 1rem;
+	}
 
-    /* メイン */
-    #about-title h1 {
-        font-size: 2rem;
-    }
-    #about #about-contents {
-        width: 90%;
-        display: block;
-    }
-    #about #about-contents .content {
-        width: 100%;
-    }
-    #about #about-contents .content dl {
-        display: block;
-        margin: 40px 20px;
-    }
-    #about #about-contents .content dl dt {
-        font-size: 1rem;
-        width: 160px;
-        padding: 7px 10px;
-    }
-    #about #about-contents .content dl dd {
-        width: 100%;
-    }
-    #btnArea a {
-        font-size: 1rem;
-    }
-
-    /* フッター */
-    footer {
-        display: block;
-        height: 200px;
-    }
-    footer #footer-left {
-        display: none;
-    }
-    footer #footer-right {
-        display: none;
-    }
-    footer #footer-center {
-        width: 100%;
-        margin-top: 0;
-        padding-top: 50px;
-    }
-    footer #footer-center .icon-bar {
-        margin: 10px 20px 10px 20px;
-    }
-    footer #footer-center ul {
-        display: flex;
-        justify-content: center;
-    }
+	/* フッター */
+	footer {
+		display: block;
+		height: 200px;
+	}
+	footer #footer-left {
+		display: none;
+	}
+	footer #footer-right {
+		display: none;
+	}
+	footer #footer-center {
+		width: 100%;
+		margin-top: 0;
+		padding-top: 50px;
+	}
+	footer #footer-center .icon-bar {
+		margin: 10px 20px 10px 20px;
+	}
+	footer #footer-center ul {
+		display: flex;
+		justify-content: center;
+	}
 }
