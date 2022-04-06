@@ -357,7 +357,43 @@ footer #footer-right ul li {
 		opacity: 0.8;
 		cursor: pointer;
 	}
-
+	/* メイン */
+	#prodact {
+		margin: 10px auto;
+	}
+	#prodact-title {
+		display: block;
+		margin: 30px auto;
+		padding: 0 0 20px 0;
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+	}
+	#prodact-title h1 {
+		font-size: 35px;
+	}
+	#prodact-title span {
+		font-size: 20px;
+	}
+	#prodact-detail img {
+		height: auto;
+	}
+	#detail-under dd {
+		margin: 20px auto;
+		font-size: 1rem;
+	}
+	#detail-under .content {
+		margin: 20px auto;
+	}
+	#detail-under .price p {
+		font-size: 1.5rem;
+		padding-top: 30px;
+	}
+	#btn + a {
+		font-size: 1.2rem;
+		padding: 0 10px;
+		margin-left: 10px;
+	}
 	/* フッター */
 	footer {
 		display: block;

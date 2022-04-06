@@ -56,23 +56,79 @@ header #header-right a {
 
 /* メイン */
 main {
+	padding-top: 100px;
+}
+.top .title {
+	position: relative;
+	color: #69443c;
+	height: 400px;
+	margin-bottom: 100px;
+}
+.top .title img {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+}
+.top .title h1 {
+	position: absolute;
+	font-size: 5rem;
+	letter-spacing: 10px;
+	top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+.top .title h2 {
+	position: absolute;
+	top: 20%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+.top .title h3 {
+	position: absolute;
+	letter-spacing: 10px;
+	top: 65%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+.top .title a {
+	display: block;
+	position: absolute;
+	font-size: 1rem;
+	letter-spacing: 10px;
+	padding: 10px 30px;
+	top: 85%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+	background-color: #fff;
+	color: #69443c;
+	border-radius: 50px;
+	transition: all 0.5s;
+}
+.top .title a:hover {
+	opacity: 0.5;
+}
+.contents {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-top: 100px;
 }
 .contents h2 {
 	border-bottom: 1px solid #333;
 	margin-bottom: 20px;
 }
-.top .title {
-	margin: 50px 0;
-	text-align: center;
-}
-.top .title h1 {
-	font-size: 5rem;
-}
 .container {
 	margin-bottom: 50px;
+	line-height: 2;
+	text-align: center;
+}
+.container span {
+	display: block;
+	text-align: right;
+	padding:20px;
 }
 .prodacts {
 	max-width: 960px;
@@ -86,6 +142,10 @@ main {
 	padding: 20px 0;
 	margin: 50px 0;
 	border-radius: 10px;
+	transition: all 0.5s;
+}
+.prodact:hover {
+	opacity: 0.6;
 }
 .prodact a {
 	text-align: center;
@@ -303,36 +363,48 @@ footer #footer-right ul li {
 	}
 
 	/* メイン */
-	#about-title h1 {
-		font-size: 2rem;
-	}
-	#about #about-contents {
-		width: 90%;
-		display: block;
-	}
-	#about #about-contents .content {
-		width: 100%;
-	}
-	#about #about-contents .content dl {
-		display: block;
-		margin: 40px 20px;
-	}
-	#about #about-contents .content dl dt {
-		font-size: 1rem;
-		width: 160px;
-		padding: 7px 10px;
-	}
-	#about #about-contents .content dl dd {
-		width: 100%;
-	}
-	#btnArea a {
-		font-size: 1rem;
-	}
-	/* メイン */
-	main {
-		/* height: 1000px; */
-	}
+main {
+	padding-top: 80px;
+}
+.top .title {
+	margin-bottom: 50px;
+}
+.top .title h1 {
+	font-size: 4rem;
+	line-height: 1;
+	width: 100%;
+	letter-spacing: normal;
+	text-align: center;
+}
+.top .title h2 {
+	font-size: 1rem;
+}
+.top .title h3 {
+	font-size: 1rem;
+	width: 100%;
+	letter-spacing: 5px;
+	text-align: center;
+}
+.container {
+	margin-bottom: 0px;
+}
+.container p {
+	font-size: 10px;
+	width: 80%;
+	margin: 0 auto;
+}
+.prodacts .prodact {
+	width: 90%;
+	margin: 30px auto;
 
+}
+.prodacts {
+	display: flex;
+	flex-wrap: wrap;
+}
+.prodact .comment p {
+	/* font-size: 0.8rem; */
+}
 	/* フッター */
 	footer {
 		display: block;
